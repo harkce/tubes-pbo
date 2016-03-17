@@ -10,5 +10,24 @@ package ticket;
  * @author habib
  */
 public class Tiket {
+    private int idTiket;
+    private int idPemesan;
+
+    public int getIdTiket() {
+        return idTiket;
+    }
+
+    public void setIdTiket(int idTiket) {
+        this.idTiket = idTiket;
+    }
+
+    public int getIdPemesan() {
+        return idPemesan;
+    }
+
+    public void setIdPemesan(int idPemesan) {
+        this.idPemesan = idPemesan;
+    }
+    
     
 }
