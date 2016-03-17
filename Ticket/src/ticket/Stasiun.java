@@ -10,5 +10,24 @@ package ticket;
  * @author habib
  */
 public class Stasiun {
+    private int idStasiun;
+    private String namaStasiun;
+
+    public int getIdStasiun() {
+        return idStasiun;
+    }
+
+    public void setIdStasiun(int idStasiun) {
+        this.idStasiun = idStasiun;
+    }
+
+    public String getNamaStasiun() {
+        return namaStasiun;
+    }
+
+    public void setNamaStasiun(String namaStasiun) {
+        this.namaStasiun = namaStasiun;
+    }
+    
     
 }
