@@ -12,6 +12,7 @@ package ticket;
 public class Tiket {
     private int idTiket;
     private int idPemesan;
+    private Rute rute;
 
     public int getIdTiket() {
         return idTiket;
@@ -29,5 +30,12 @@ public class Tiket {
         this.idPemesan = idPemesan;
     }
     
+    public void addRute(Rute rute) {
+        this.rute = rute;
+    }
+    
+    public Rute getRute() {
+        return rute;
+    }
     
 }
