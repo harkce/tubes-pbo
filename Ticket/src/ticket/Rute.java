@@ -10,7 +10,7 @@ package ticket;
  * @author habib
  */
 public class Rute {
-     private Stasiun stasiun1;
+    private Stasiun stasiun1;
     private Stasiun stasiun2;
     private int idRute;    
     
