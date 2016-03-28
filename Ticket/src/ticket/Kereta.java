@@ -48,8 +48,6 @@ public class Kereta {
     }
     
     public void removeGerbong(int i){
-        if (i == daftarGerbong[jmlGerbong]){
-            daftarGerbong[i]=0;
-        }
+        jmlGerbong--;
     }
 }
