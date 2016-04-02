@@ -15,6 +15,10 @@ public class Main {
     private static Scanner scanner = new Scanner(System.in);
     
     public static void main(String[] args) {
+        MenuUtama();
+       
+    }
+    public static void MenuUtama(){
         System.out.println("Menu Utama");
         System.out.println("1. Menu Admin");
         System.out.println("2. Menu Customer Service");
@@ -27,7 +31,7 @@ public class Main {
             case 2 :
                 menuCustomerService();
                 break;
-        }
+        } 
     }
     
     public static void menuAdmin() {
@@ -107,7 +111,7 @@ public class Main {
             menuAdmin();
         }
     }
-    public static void profil(){
+    public static void Profil(){
         System.out.println("Profil");
         System.out.print("Kembali ke menu utama?(y/n) ");
         String kembali = scanner.next();
@@ -135,9 +139,99 @@ public class Main {
         }
     }
     public static void Exit(){
-        menuAdmin();
+        MenuUtama();
     }
     public static void menuCustomerService() {
         System.out.println("Ini menu customer service");
+        System.out.println("Menu : ");
+        System.out.println("1.Lihat Data Kereta");
+        System.out.println("2.Lihat Data Gerbong");
+        System.out.println("3.Lihat Data Stasiun");
+        System.out.println("4.Lihat Data Rute");
+        System.out.println("5.Input Tiket");
+        System.out.println("6.Profil");
+        System.out.println("7.Exit");
+        System.out.print("Pilih :");
+        int pilihan = scanner.nextInt();
+        switch (pilihan) {
+            case 1 :
+                LihatDataKereta();
+                break;
+            case 2 :
+                LihatDataGerbong();
+                break;
+            case 3 :
+                LihatDataStasiun();
+                break;
+            case 4 : 
+                LihatDataRute();
+                break;
+            case 5 :
+                InputTiket();
+                break;
+            case 6 :
+                profil();
+                break;
+            case 7 :
+                exit();
+                break;
+        }
+    }
+    public static void LihatDataKereta(){
+        System.out.println("Lihat Data Kereta");
+        System.out.print("Kembali ke menu utama?(y/n) ");
+        String kembali = scanner.next();
+        if (kembali.equals("y"))
+        {
+            menuCustomerService();
+        }
+    }
+    public static void LihatDataGerbong(){
+        System.out.println("Lihat Data Gerbong");
+        System.out.print("Kembali ke menu utama?(y/n) ");
+        String kembali = scanner.next();
+        if (kembali.equals("y"))
+        {
+            menuCustomerService();
+        }
+    }
+    public static void LihatDataStasiun(){
+        System.out.println("Lihat Data Stasiun");
+        System.out.print("Kembali ke menu utama?(y/n) ");
+        String kembali = scanner.next();
+        if (kembali.equals("y"))
+        {
+            menuCustomerService();
+        }
+    }
+    public static void LihatDataRute(){
+        System.out.println("Lihat Data Rute");
+        System.out.print("Kembali ke menu utama?(y/n) ");
+        String kembali = scanner.next();
+        if (kembali.equals("y"))
+        {
+            menuCustomerService();
+        }
+    }
+    public static void InputTiket(){
+        System.out.println("Input Tiket");
+        System.out.print("Kembali ke menu utama?(y/n) ");
+        String kembali = scanner.next();
+        if (kembali.equals("y"))
+        {
+            menuCustomerService();
+        }
+    }
+    public static void profil(){
+        System.out.println("Profil");
+        System.out.print("Kembali ke menu utama?(y/n) ");
+        String kembali = scanner.next();
+        if (kembali.equals("y"))
+        {
+            menuCustomerService();
+        }
+    }
+    public static void exit(){
+        MenuUtama();
     }
 }
